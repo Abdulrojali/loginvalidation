@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login .col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login .col label{
+    font-size: 1.25em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.login .col input{
+    padding: 0 20px;
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.login .next{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.login .next a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 250;
+    cursor: pointer;
+}
+.login .next a:hover{
+    opacity: 0.5;
+}
+.createAccount{
+    display: none;
+}
+.createAccount.active{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.createAccount .col{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.createAccount .col label{
+    font-size: 1.25em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.createAccount .col input{
+    padding: 0 20px;
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.createAccount .prev{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.createAccount .prev a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 250;
+    cursor: pointer;
+}
+.createAccount .prev a:hover{
+    opacity: 0.5;
+}
+.createAccount .col input:focus,.login .col input:focus{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.login.active{
+    display: none;
+}
